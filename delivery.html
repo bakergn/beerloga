@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEERLOGA</title>
+</head>
+<body background="BG.jpg">
+    <aside>
+    <figure class='fig'>
+    <a href="index.html"><img src="logo.png" height="52" width="52"></img></a>
+    </figure>
+    </aside>
+    <ul id="navbar" align='center'>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="delivery.html">Доставка(New)</a></li>
+        <li><a href="#">Меню</a>
+          <ul>
+            <li><a href="pivo.html">Пиво</a></li>
+            <li><a href="zakus.html">Закуски</a></li>
+          </ul>
+        <li><a href="kontaktu.html">Контакти</a>
+        </li>
+        <li><a href="vidguk.html">Відгуки</a></li>
+        <li><a href="register.html">Вхід/Реєстрація</a></li>
+      </ul>
+      <p><form method="POST" class='delivery' align='center'>
+        <font color='white' size=+2>Оберіть товар:</font>>
+        <select>
+            <option name="Duff">Duff</option>
+            <option name="Pale ale">Pale Ale</option>
+            <option name="heineken">Heineken</option>
+           </select>
+    </form></p>
+    <div class='delivery2' align='center'>
+    <form method="post" action="/cgi-bin/mailscript">
+        <font color='white' size=+2>Ваша адреса:</font> <input type="text" name="secondname" size="20" maxlength="54"><br>
+            <p><form method="POST">
+                <p><font color='white' size=+2 >Оберіть зручний час для отримання:</font></p>
+                <input type="radio" name="buttom" value="male"><font color=white>12:00-13:00<br>
+                <input type="radio" name="buttom" value="male">13:00-14:00<br>
+                <input type="radio" name="buttom" value="male">15:00-16:00<br>
+                <input type="radio" name="buttom" value="male">17:00-18:00<br>
+                <input type="radio" name="buttom" value="male">19:00-20:00<br>
+                <input type="radio" name="buttom" value="male">21:00-22:00<br>
+                <input type="radio" name="buttom" value="male">За 15 хвилин<br>
+            </form>
+            </p>
+            <form method="post" action="/cgi-bin/mailscript">
+                <font color='white' size=+2>Ваш номер телефону:</font> <input type="text" name="secondname" size="20" maxlength="11"><br><br>
+            <button>Підтвердити</button>
+</div>
+
+<figure class='deliverypng'>
+<img src='delivery.png' width="500" height="500" align='center'>
+</figure>
+
+     <div id='content'>
+    </div>
+    <div id='footer'>
+      &copy; Vitalii Yevdokimov |  BEERLOGA ALL RIGHTS RESERVERD &copy;
+    </div>
+  </body>
+</html>
